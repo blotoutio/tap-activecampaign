@@ -12,7 +12,7 @@ def discover():
     flat_streams = flatten_streams()
     for stream_name, schema_dict in schemas.items():
         try:
-            schema_dict['selected']=True
+            #schema_dict['selected']=True
             schema = Schema.from_dict(schema_dict)
             mdata = field_metadata[stream_name]
         except Exception as err:
